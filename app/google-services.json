@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "811044356578",
+    "project_id": "userdata-ae83b",
+    "storage_bucket": "userdata-ae83b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811044356578:android:56196ff2d553adf0a039bb",
+        "android_client_info": {
+          "package_name": "com.example.cloudlec1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "811044356578-3mam8qj6qfhdt20t1vkgbdip048jdjai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAPRUhhymbFyM4m3jaQNgqazSAOZShKOs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "811044356578-3mam8qj6qfhdt20t1vkgbdip048jdjai.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
     tools:context=".MainActivity">
-
-
 
 
 
@@ -29,7 +27,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="20dp"
-                android:text="User Details"
+                android:text="User Data"
                 android:textAlignment="center"
                 android:textColor="#E2A258DF"
                 android:textSize="50sp" />
@@ -42,7 +40,6 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/et_custom"
-                android:fontFamily="@font/roboto_regular"
                 android:hint="Name"
                 android:inputType="textPersonName"
                 android:padding="15dp"
@@ -65,7 +62,6 @@
                     android:layout_marginRight="20dp"
                     android:layout_marginBottom="20dp"
                     android:background="@drawable/bg_ui"
-                    android:fontFamily="@font/roboto_regular"
                     android:onClick="saveToFirebase"
                     android:text="Save"
                     android:textColor="@android:color/white" />
