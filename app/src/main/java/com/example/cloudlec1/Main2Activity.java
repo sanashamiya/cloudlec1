@@ -110,14 +110,25 @@ public class Main2Activity extends AppCompatActivity implements UserAdapter.Item
 
     }
     public void Delete(final User user){
-        db.collectio("users").decument(user.getId())
+        db.collection("users").document(user.getId())
          .delete()
-           .addOnSuccess(new OnSuccessListener<Void>(){
-               public void onSeccess(void unsed){
+           .addOnSuccessListener(new OnSuccessListener<Void>(){
+               @Override
+               public void onSuccess(Void unused) {
                    Log.e("sanaa","delete");
                    items.remove(user);
                }
+
            })
+            .addOnFailureListener(new OnFailureListener(){
+                @Override
+                public void onFailure(@NonNull Exception e) {
+                    Log.e("sanaa","fail");
+
+                }
+
+
+        });
     }
 }
 

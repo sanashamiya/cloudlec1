@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".CloudStroage">
+
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_upload"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="-23dp" />
+
+    <Button
+            android:onClick="uploadingimg"
+            android:id="@+id/btn_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:text="upload" />
+
+        <Button
+            android:onClick="addimage"
+            android:id="@+id/btn_add_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:layout_toEndOf="@id/btn_upload"
+            android:text="Choose image" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageview"
+        android:layout_alignTop="@+id/btn_upload"
+        android:layout_alignEnd="@+id/imageview"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="-326dp"
+        android:layout_marginEnd="159dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>
